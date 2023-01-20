@@ -16,7 +16,7 @@
 
     &-wrapper{
         position: relative;
-        min-width: 310px;
+        min-width: 290px;
 
         &:after, &:before{
             content: '';
@@ -115,7 +115,7 @@
     }
 
     &-guide{
-        padding: 20px;
+        padding: 10px;
         margin: 0;
         list-style: none;
         background-color: #000;
@@ -124,11 +124,41 @@
         justify-content: center;
         align-items: center;
 
+        width: 76px;
+
+        li{
+            line-height: 0;
+            border-right: 1px solid;
+            margin-right: 52px;
+            width: 52px;
+            text-align: right;
+        }
+
+        li:nth-child(2n){
+            border-left: 1px solid;
+            border-right: 0px solid;
+            margin-right: 0;
+            margin-left: 52px;
+            text-align: left;
+            
+            a{
+                padding-right: 0;
+                padding-left: 10px;
+            }
+        }
+
         a{
             display: inline-block;
-            padding: 5px 10px;
-            cursor: pointer; 
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 10px;
+            cursor: pointer;
             font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            
+            // &::first-letter{
+            //     font-size: 12px;
+            // }
         }
     }
 
